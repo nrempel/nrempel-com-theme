@@ -13,7 +13,7 @@
     --gap: clamp(24px, 1.7032rem + 1.9355vw, 48px);
     --head-nav-gap: 32px;
     --container-width: 1440px;
-    --content-font-size: clamp(1.7rem, 0.38vw + 1.4rem, 2rem);
+    --content-font-size: clamp(1.5rem, 0.38vw + 1.3rem, 1.8rem);
     --header-spacing: clamp(4.8rem, 4rem + 2.5vw, 8rem);
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 figcaption {
-    font-size: 1.3rem;
+    font-size: 1.2rem; 
     text-align: right;
 }
 
@@ -46,12 +46,12 @@ hr {
 }
 
 .gh-content h2 {
-    font-size: 2.25em;
+    font-size: 2.125em;
     letter-spacing: -0.03em;
 }
 
 .gh-content h3 {
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 
 .gh-canvas {
@@ -149,7 +149,7 @@ hr {
 
 .gh-about-primary {
     max-width: 1200px;
-    font-size: clamp(3.2rem, 2.4452rem + 2.0968vw, 5.8rem);
+    font-size: clamp(2.8rem, 2.4452rem + 2.0968vw, 5.4rem);
     font-weight: 800;
     line-height: 1.2;
 }
@@ -168,7 +168,7 @@ hr {
 
 .gh-about-secondary {
     max-width: 840px;
-    font-size: clamp(2.4rem, 0.54vw + 2.14rem, 3rem);
+    font-size: clamp(2.2rem, 0.54vw + 2.14rem, 2.8rem); 
     font-weight: 500;
     letter-spacing: -0.008em;
 }
@@ -184,7 +184,7 @@ hr {
 .gh-about-primary + .gh-about-secondary {
     max-width: 640px;
     margin-top: 20px;
-    font-size: clamp(2rem, 0.36vw + 1.83rem, 2.4rem);
+    font-size: clamp(1.8rem, 0.36vw + 1.83rem, 2.2rem);
     font-weight: 450;
 }
 
@@ -339,6 +339,7 @@ hr {
 }
 
 .gh-card-title {
+    font-size: clamp(1.8rem, 1.7rem + 1.5625vw, 2.8rem);
     font-weight: 800;
     word-break: break-word;
 }
@@ -361,7 +362,7 @@ hr {
     gap: 8px;
     align-items: center;
     margin-top: 16px;
-    font-size: 1.4rem;
+    font-size: 1.2rem; 
     font-weight: 500;
     color: var(--color-secondary-text);
 }
@@ -475,7 +476,7 @@ hr {
 
 .has-typographic-feed .gh-card-title {
     max-width: 1200px;
-    font-size: clamp(3.2rem, 2.4rem + 2.5vw, 6.4rem);
+    font-size: clamp(1.8rem, 1.2rem + 2.5vw, 3.4rem);
     line-height: 1.1;
 }
 
@@ -641,8 +642,8 @@ hr {
 }
 
 .gh-article-title {
-    grid-column: 1 / span 9;
-    font-size: clamp(4rem, 2.86vw + 2.63rem, 7.2rem);
+    grid-column: 1 / span 7;
+    font-size: clamp(3.2rem, 2.86vw + 2.33rem, 5.8rem); 
     font-weight: 800;
     line-height: 1;
     letter-spacing: -0.03em;
@@ -663,7 +664,7 @@ hr {
 .gh-article-excerpt {
     grid-column: 1 / span 9;
     max-width: 840px;
-    font-size: clamp(1.8rem, 0.54vw + 1.54rem, 2.4rem);
+    font-size: clamp(1.6rem, 0.54vw + 1.54rem, 2.2rem); 
     font-weight: 500;
     line-height: 1.45;
 }
@@ -695,6 +696,7 @@ hr {
     position: relative;
     margin-top: clamp(4rem, 3rem + 3.125vw, 8rem);
     line-height: 1.7;
+    /* max-width: 75%; */
 }
 
 :is(.post-template, .page-template) .no-image .gh-content {
@@ -815,7 +817,7 @@ hr {
 
 .gh-navigation {
     grid-column: 1 / span 12;
-    font-size: clamp(2rem, 1.7rem + 0.9375vw, 3.2rem);
+    font-size: clamp(1.8rem, 1.7rem + 0.9375vw, 3rem); 
     font-weight: 800;
     letter-spacing: -0.02em;
 }
@@ -916,8 +918,8 @@ hr {
 /* ---------------------------------------------------------- */
 
 .gh-foot {
-    padding-top: clamp(8rem, 4.55vw + 6.18rem, 12rem);
-    padding-bottom: clamp(8rem, 4.55vw + 6.18rem, 12rem);
+    padding-top: clamp(2rem, 4.55vw + 2.18rem, 4rem);
+    padding-bottom: clamp(2rem, 4.55vw + 2.18rem, 4rem);
 }
 
 .gh-foot-inner {
@@ -934,4 +936,16 @@ hr {
 
 .gh-copyright {
     font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+.gh-feed-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* This will create a responsive number of columns */
+    grid-gap: 5rem; 
 }

@@ -47,9 +47,11 @@
 
 <main class="gh-main gh-outer">
     <div class="gh-feed gh-inner">
-        {{#foreach posts}}
-            {{> "loop"}}
-        {{/foreach}}
+        <div class="gh-feed-inner">
+            {{#foreach posts}}
+                {{> "loop"}}
+            {{/foreach}}
+        </div>
     </div>
 </main>
 
